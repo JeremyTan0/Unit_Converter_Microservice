@@ -50,7 +50,7 @@ while True:
                 if data["convert_type"] == "lbs":
                     converted_val = kgs_to_lbs(convert_val)
                 elif data["convert_type"] == "kgs":
-                    convert_val = lbs_to_kgs(convert_val)
+                    converted_val = lbs_to_kgs(convert_val)
 
                 socket.send_json({
                     "converted_type": data["convert_type"],
